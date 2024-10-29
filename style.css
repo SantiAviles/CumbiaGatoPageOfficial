@@ -1,0 +1,173 @@
+:root {
+    --verde-neon: #C6FF00;           
+    --negro-oscuro: #07161B;         
+    --blanco: #FFFFFF;               
+    --amarillo-dorado: #F9B800;      
+    --morado-fuerte: #7E00C2;        
+    --rosa-intenso: #F2009A;         
+    --naranja: #FF8200;              
+    --verder_fondo: #07161B;
+    --verde_oscuro: #0B3D02;
+    --gris_oscuro: #1C1C1C;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: var(--blanco);
+    background-color: var(--negro-oscuro); /* Para asegurar la continuidad del color */
+}
+
+/* Fondo y Overlay */
+.background-overlay {
+    background: linear-gradient(to right, rgba(7,22,27,0.9), rgba(7,22,27,0.7)), url(./img/fondo-hero.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    height: 10rem;
+}
+
+/* Logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.custom-logo {
+    height: 10rem;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Navegación principal */
+.nav-principal {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    gap: 6.5rem
+}
+
+.nav-list {
+    display: flex;
+    gap: 7rem;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--verde-neon);
+}
+
+.nav-list li a:hover {
+    color: var(--amarillo-dorado);
+}
+
+.cta-button {
+    margin-left: 3rem;
+    padding: 0.8rem 2.6rem;
+    background-color: var(--verde-neon);
+    color: var(--negro-oscuro);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 10rem);
+    padding: 0 5rem;
+}
+
+.hero-info {
+    width: 50%;
+    max-width: 60rem;
+    margin-left: 2rem;
+    color: var(--blanco);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+}
+@font-face {
+    font-family: 'street';
+    src: url(./font/DonGraffiti.otf);
+    font-weight: normal;
+    font-size: small;
+}
+/* Estilo general para el h1 */
+.hero-info h1 {
+    font-family: 'street', sans-serif; /* Aplica la fuente de graffiti a todo el h1 */
+    font-size: 6rem; 
+    text-transform: uppercase;
+/*     letter-spacing: -0.025rem; */
+    text-shadow: 
+        -2px 2px 0 #000,   /* Contorno negro general */
+        -4px 4px 0 #000,   /* Contorno adicional */
+        -6px 6px 0 #FFEA00; /* Contorno adicional amarillo */
+}
+/* Estilo específico para la clase primary-text */
+.primary-text {
+    color: #FF8200; /* Color naranja brillante */
+    transform: rotate(-3deg) skew(-5deg, -3deg); /* Rotación y distorsión para un efecto urbano */
+}
+/* Estilo específico para la clase secondary-text */
+.secondary-text {
+    color: var(--verde-neon); /* Verde neón definido en las variables */
+}
+
+/* Alineación y ajuste del botón dentro de .hero-info */
+.hero-info-element .cta-button {
+    align-self: flex-start;
+    margin-left: 0; /* Asegura que el botón esté alineado a la izquierda */
+    padding: 0.8rem 2.4rem; /* Un poco más de espacio interno para un mejor diseño */
+}
+
+.hero-info-element {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--blanco);
+}
+
+/* Media queries para ajustar en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-logo {
+        margin-left: 2rem; /* Ajuste menor para pantallas pequeñas */
+    }
+    
+    .nav-principal {
+        margin-right: 2rem; /* Ajuste menor para pantallas pequeñas */
+    }
+
+    .hero-info {
+        width: 100%;
+        padding: 1rem;
+    }
+}
