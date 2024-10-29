@@ -6,10 +6,10 @@
 
 :root {
     --verde-neon: #C6FF00;           
-    --negro-oscuro: #07161B;         
+    --negro-oscuro: rgb(7, 22, 27);         
     --blanco: #FFFFFF;               
     --amarillo-dorado: #F9B800;      
-    --morado-fuerte: #7E00C2;        
+    --morado-fuerte: rgb(126, 0, 194);        
     --rosa-intenso: #F2009A;         
     --naranja: #FF8200;              
     --verder_fondo: #07161B;
@@ -38,7 +38,7 @@ body {
 
 /* Fondo y Overlay */
 .background-overlay {
-    background: linear-gradient(to right, rgba(5, 22, 27, 0.9), rgba(5,22,27,0.7)), url(./img/fondo-hero.JPG);
+    background: linear-gradient(to bottom, rgba(7, 22, 27, 0.92) 15%, rgba(126, 0, 194, 0.3) 70%), url(./img/fondo-hero.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    height: 10rem;
+    height: 12rem;
 }
 
 /* Logo */
@@ -63,7 +63,7 @@ header {
     margin-left: 2rem;
 }
 .custom-logo {
-    height: 10rem;
+    height: 15rem;
     width: auto;
     max-width: 100%;
 }
@@ -126,19 +126,24 @@ header {
     gap: 2rem;
 
 }
-.hero-info h1 {
-    font-family: 'Creepster', sans-serif; /* Mantén la fuente */
-    font-size: 5rem; 
+/* .hero-info h1 {
+    font-family: 'Squada One', sans-serif; 
+    font-size: 3rem; 
     text-transform: uppercase;
     line-height: 1.2;
 }
-.primary-text {
+/* .primary-text {
     color: #FF8200; 
     transform: none; 
 }
 .secondary-text {
     color: var(--verde-neon); 
     transform: none; 
+}  */ 
+.custom-logo-hero{
+    height: 30rem;
+    width: auto;
+    max-width: 100%;
 }
 .hero-info h2{
     font-family: 'Squada One', sans-serif;
@@ -149,7 +154,6 @@ header {
 }
 
 .hero-info-element .cta-button {
-    align-self: flex-start;
     margin-left: 0;
     padding: 1.5rem 2.4rem; 
 }
