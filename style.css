@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
 :root {
     --verde-neon: #C6FF00;           
     --negro-oscuro: #07161B;         
@@ -7,7 +13,7 @@
     --rosa-intenso: #F2009A;         
     --naranja: #FF8200;              
     --verder_fondo: #07161B;
-    --verde_oscuro: #0B3D02;
+    --verde_oscuro: #0b3d02;
     --gris_oscuro: #1C1C1C;
 }
 
@@ -26,12 +32,13 @@ html {
 body {
     font-size: 16px;
     color: var(--blanco);
-    background-color: var(--negro-oscuro); /* Para asegurar la continuidad del color */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 }
 
 /* Fondo y Overlay */
 .background-overlay {
-    background: linear-gradient(to right, rgba(7,22,27,0.9), rgba(7,22,27,0.7)), url(./img/fondo-hero.JPG);
+    background: linear-gradient(to right, rgba(5, 22, 27, 0.9), rgba(5,22,27,0.7)), url(./img/fondo-hero.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,9 +59,9 @@ header {
 .header-logo {
     display: flex;
     align-items: center;
+    margin-top: 2rem;
     margin-left: 2rem;
 }
-
 .custom-logo {
     height: 10rem;
     width: auto;
@@ -66,43 +73,46 @@ header {
     display: flex;
     align-items: center;
     color: var(--blanco);
-    gap: 6.5rem
+    gap: 1rem
 }
-
 .nav-list {
     display: flex;
-    gap: 7rem;
+    gap: 3rem;
     list-style: none;
 }
-
 .nav-list li a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+.nav-list li a:hover {
     color: var(--verde-neon);
 }
 
-.nav-list li a:hover {
-    color: var(--amarillo-dorado);
-}
-
+/* Button */
 .cta-button {
     margin-left: 3rem;
-    padding: 0.8rem 2.6rem;
-    background-color: var(--verde-neon);
+    padding: 1.5rem 2.4rem;
+    background-color: var(--blanco);
     color: var(--negro-oscuro);
     text-decoration: none;
     border-radius: 0.5rem;
-    font-size: 1.6rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.cta-button:hover{
+    background-color: var(--verde-neon);
+    color: var(--negro-oscuro);
 }
 
 /* Hero Section */
 .hero {
     display: flex;
     align-items: center;
-    height: calc(100vh - 10rem);
+    height: 100vh;
     padding: 0 5rem;
 }
-
 .hero-info {
     width: 50%;
     max-width: 60rem;
@@ -116,40 +126,33 @@ header {
     gap: 2rem;
 
 }
-@font-face {
-    font-family: 'street';
-    src: url(./font/DonGraffiti.otf);
-    font-weight: normal;
-    font-size: small;
-}
-/* Estilo general para el h1 */
 .hero-info h1 {
-    font-family: 'street', sans-serif; /* Aplica la fuente de graffiti a todo el h1 */
-    font-size: 6rem; 
+    font-family: 'Creepster', sans-serif; /* Mantén la fuente */
+    font-size: 5rem; 
     text-transform: uppercase;
-/*     letter-spacing: -0.025rem; */
-    text-shadow: 
-        -2px 2px 0 #000,   /* Contorno negro general */
-        -4px 4px 0 #000,   /* Contorno adicional */
-        -6px 6px 0 #FFEA00; /* Contorno adicional amarillo */
+    line-height: 1.2;
 }
-/* Estilo específico para la clase primary-text */
 .primary-text {
-    color: #FF8200; /* Color naranja brillante */
-    transform: rotate(-3deg) skew(-5deg, -3deg); /* Rotación y distorsión para un efecto urbano */
+    color: #FF8200; 
+    transform: none; 
 }
-/* Estilo específico para la clase secondary-text */
 .secondary-text {
-    color: var(--verde-neon); /* Verde neón definido en las variables */
+    color: var(--verde-neon); 
+    transform: none; 
+}
+.hero-info h2{
+    font-family: 'Squada One', sans-serif;
+    font-size: 3rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Alineación y ajuste del botón dentro de .hero-info */
 .hero-info-element .cta-button {
     align-self: flex-start;
-    margin-left: 0; /* Asegura que el botón esté alineado a la izquierda */
-    padding: 0.8rem 2.4rem; /* Un poco más de espacio interno para un mejor diseño */
+    margin-left: 0;
+    padding: 1.5rem 2.4rem; 
 }
-
 .hero-info-element {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
