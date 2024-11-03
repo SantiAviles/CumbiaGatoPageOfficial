@@ -165,15 +165,15 @@ header {
     padding: 3rem;
     border-radius: 1rem;
     margin: 5rem auto 5rem auto;
-    box-shadow: 0px 9px 36px 14px rgba(126, 0, 194, 0.3);
+    box-shadow: 0px 6px 27px 12px rgba(126, 0, 194, 0.3);
 }
 
 
 /* Main Section */
 .main-container {
     background: linear-gradient(to top, var(--gris_oscuro) 0%, rgba(7, 22, 27, 0.92) 20%) no-repeat; /* Degradado */
-    padding: 4rem 0;
-    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.75); /* Sombra para suavizar la transición */
+    padding: 1rem 0;
+    box-shadow: 0px -15px 20px rgba(0, 0, 0, 0.75); /* Sombra para suavizar la transición */
 }
 .main-img-container {
     width: 100%; /* Mantén el ancho del contenedor */
@@ -323,23 +323,9 @@ header {
 
 
 
-/* Media Query para pantallas más pequeñas */
+
 @media (max-width: 768px) {
-    .main-img-container {
-        height: 200px; /* Reduce la altura para pantallas pequeñas */
-    }
-
-    .intro-title {
-        font-size: 2rem;
-    }
-
-    .intro-description {
-        font-size: 1.4rem;
-    }
-}
-
-/* Media queries para ajustar en pantallas más pequeñas */
-@media (max-width: 768px) {
+    /* Header */
     header {
         flex-direction: column;
         padding: 1rem;
@@ -367,6 +353,7 @@ header {
         margin: 1rem 0;
     }
 
+    /* Hero Section */
     .hero {
         flex-direction: column;
         padding: 1rem;
@@ -393,4 +380,40 @@ header {
         font-size: 1.4rem;
         margin: 2rem 0;
     }
+
+    /* Main Section */
+    .main-img-container {
+        height: 200px;
+    }
+
+    .intro-title, .intro-sub-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .intro-description {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    /* Gallery */
+    .gallery-show {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .item1, .item2, .item3, .item4 {
+        grid-area: unset;
+        aspect-ratio: 2;
+    }
+
+    /* Button Center */
+    .button-center {
+        margin-top: 1rem 0;
+    }
+
 }
