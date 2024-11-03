@@ -1,11 +1,11 @@
 :root {
-    --verde-neon: #C6FF00;           
-    --negro-oscuro: rgb(7, 22, 27);         
-    --blanco: #FFFFFF;               
-    --amarillo-dorado: #F9B800;      
-    --morado-fuerte: rgb(126, 0, 194);        
-    --rosa-intenso: #F2009A;         
-    --naranja: #FF8200;              
+    --verde-neon: #C6FF00;
+    --negro-oscuro: rgb(7, 22, 27);
+    --blanco: #FFFFFF;
+    --amarillo-dorado: #F9B800;
+    --morado-fuerte: rgb(126, 0, 194);
+    --rosa-intenso: #F2009A;
+    --naranja: #FF8200;
     --verder_fondo: #07161B;
     --verde_oscuro: #0b3d02;
     --gris_oscuro: #1C1C1C;
@@ -17,7 +17,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -56,6 +58,7 @@ header {
     margin-top: 2rem;
     margin-left: 2rem;
 }
+
 .custom-logo {
     height: 15rem;
     width: auto;
@@ -69,16 +72,19 @@ header {
     color: var(--blanco);
     gap: 1rem;
 }
+
 .nav-list {
     display: flex;
     gap: 3rem;
     list-style: none;
 }
+
 .nav-list a {
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--blanco);
 }
+
 .nav-list a:hover {
     color: var(--verde-neon);
 }
@@ -95,6 +101,7 @@ header {
     font-size: 2rem;
     line-height: normal;
 }
+
 .cta-button:hover {
     background-color: var(--verde-neon);
     color: var(--negro-oscuro);
@@ -107,6 +114,7 @@ header {
     height: calc(100vh - 15rem);
     padding: 0 5rem;
 }
+
 .hero-info {
     width: 50%;
     max-width: 60rem;
@@ -119,11 +127,13 @@ header {
     align-items: flex-start;
     gap: 3rem;
 }
+
 .custom-logo-hero {
     height: 20rem;
     width: auto;
     max-width: 100%;
 }
+
 .hero-info h2 {
     font-family: 'Squada One', sans-serif;
     font-size: 2.9rem;
@@ -132,6 +142,7 @@ header {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     padding: 0;
 }
+
 .hero-info p {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -147,6 +158,85 @@ header {
     color: var(--blanco);
 }
 
+/* Main Section */
+.main-container {
+    background: linear-gradient(to top, var(--gris_oscuro) 0%, rgba(7, 22, 27, 0.92) 20%) no-repeat; /* Degradado */
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.75); /* Sombra para suavizar la transición */
+}
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    background-color:  rgba(7, 22, 27, 0.3);;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 36px 14px rgba(126, 0, 194, 0.3); /* Suaviza la sombra */
+}
+.main-img-container {
+    width: 100%; /* Mantén el ancho del contenedor */
+    max-width: 80%; /* Limita el tamaño máximo de la imagen en el contenedor */
+    background-color: var(--gris_oscuro);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 auto 2rem auto; /* Centra el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 9px 26px 5px rgba(0,0,0,0.75); 
+}
+.main-img-container img {
+    width: 100%; /* Ajusta el ancho al contenedor limitado */
+    height: 100%; /* Mantiene la proporción */
+    max-height: 400px; /* Controla la altura máxima de la imagen */
+    object-fit: cover;
+}
+.intro-section {
+    color: var(--blanco);
+}
+.intro-title {
+    font-family: 'Squada One', sans-serif;
+    font-size: 2.4rem;
+    color: var(--verde-neon);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.intro-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--blanco);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .main-img-container {
+        height: 200px; /* Reduce la altura para pantallas pequeñas */
+    }
+
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-description {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries para ajustar en pantallas más pequeñas */
 @media (max-width: 768px) {
     header {
@@ -159,16 +249,19 @@ header {
         margin-left: 0;
         margin-top: 0;
     }
+
     .nav-principal {
         flex-direction: column;
         margin: 1rem 0;
         gap: 1rem;
     }
+
     .nav-list {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
     }
+
     .cta-button {
         margin: 1rem 0;
     }
