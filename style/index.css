@@ -158,7 +158,6 @@ header {
 .hero-info-element {
     color: var(--blanco);
 }
-
 .container{
     width: 90%;
     max-width: 1200px;
@@ -168,8 +167,6 @@ header {
     margin: 5rem auto 5rem auto;
     box-shadow: 0px 6px 27px 12px rgba(126, 0, 194, 0.3);
 }
-
-
 /* Main Section */
 .main-container {
     background: linear-gradient(to top, var(--gris_oscuro) 0%, rgba(7, 22, 27, 0.92) 20%) no-repeat; /* Degradado */
@@ -177,8 +174,8 @@ header {
     box-shadow: 0px -15px 20px rgba(0, 0, 0, 0.75); /* Sombra para suavizar la transición */
 }
 .main-img-container {
-    width: 100%; /* Mantén el ancho del contenedor */
-    max-width: 80%; /* Limita el tamaño máximo de la imagen en el contenedor */
+    width: 100%; 
+    max-width: 80%; 
     background-color: var(--gris_oscuro);
     border-radius: 1rem;
     overflow: hidden;
@@ -189,9 +186,9 @@ header {
     box-shadow: 0px 9px 26px 5px rgba(0,0,0,0.75); 
 }
 .main-img-container img {
-    width: 100%; /* Ajusta el ancho al contenedor limitado */
-    height: 100%; /* Mantiene la proporción */
-    max-height: 400px; /* Controla la altura máxima de la imagen */
+    width: 100%; 
+    height: 100%;
+    max-height: 400px;
     object-fit: cover;
 }
 .intro-section {
@@ -268,12 +265,10 @@ header {
 .contact-section .intro-description{
     margin-bottom: 3.5rem;
 }
-/* Contenedor principal para controlar el hover */
 .contact-hover-area {
     position: relative;
     display: inline-block;
 }
-/* Estilo básico para el contenido desplegable */
 .contact-content {
     display: none;
     text-align: center;
@@ -281,10 +276,10 @@ header {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(28, 28, 28, 0.95); /* Fondo semi-transparente */
+    background-color: rgba(28, 28, 28, 0.95);
     padding: 1rem;
     border-radius: 8px;
-    width: 25rem; /* Ajusta el ancho según sea necesario */
+    width: 25rem; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
 }
