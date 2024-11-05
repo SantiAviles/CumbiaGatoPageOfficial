@@ -106,7 +106,7 @@ header {
     background-color: rgba(7, 22, 27, 0.3);
     padding: 3rem;
     border-radius: 1rem;
-    margin: 5rem auto 5rem auto;
+    margin: 5rem auto;
     box-shadow: 0px 6px 27px 12px rgba(126, 0, 194, 0.3);
 }
 
@@ -174,8 +174,6 @@ header {
     width: 100%;
     height: auto;
     max-width: 55rem;
-    padding: 0;
-    margin: 0;
 }
 .gallery-item img {
     display: block;
@@ -185,7 +183,7 @@ header {
     transition: transform 0.3s ease;   
 }
 .gallery-item:hover img {
-    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    transform: scale(1.1); 
 }
 
 /* Footer Section */
@@ -199,7 +197,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-/*     box-shadow: inset 1px -12px 60px 10px rgba(126, 0, 194, 0.2); */
 }
 .social-icon{
     display: flex;

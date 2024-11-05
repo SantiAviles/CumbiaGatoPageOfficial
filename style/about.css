@@ -116,6 +116,7 @@ h2 {
     text-transform: uppercase;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     padding: 0;
+    margin-bottom: 2rem;
 }
 
 p {
@@ -204,23 +205,22 @@ p {
 }
 
 .gallery-show {
-    /*     display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */ /* Comentado */
-    display: grid;
+    align-items: center; 
+    margin-top: 2rem;
+/*     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1;
-    margin-top: 2rem;
+    margin-top: 2rem; */ /* Se podria usar para luego, la parte de "Conocenos" */
 }
-
-.item1 {
+/* .item1 {
     grid-area: 1 / 1 / 3 / 2;
 }
-/* Comentado y si no revisar el de portafolio */
 .item2 {
     grid-area: 1 / 2 / 3 / 3;
-}
+} */ /* Junto a esto se puede usar para un futuro */
 
 .gallery-item {
     position: relative;
@@ -231,8 +231,6 @@ p {
     width: 100%;
     height: auto;
     max-width: 55rem;
-    padding: 0;
-    margin: 0;
 }
 
 .gallery-item img {
@@ -245,7 +243,6 @@ p {
 
 .gallery-item:hover img {
     transform: scale(1.1);
-    /* Efecto de zoom al pasar el ratón */
 }
 
 .button-center {
@@ -284,7 +281,6 @@ p {
 
 .contact-content img {
     width: 100%;
-    /* Ajuste al contenedor */
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -321,7 +317,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*     box-shadow: inset 1px -12px 60px 10px rgba(126, 0, 194, 0.2); */
 }
 
 .social-icon {
